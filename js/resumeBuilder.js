@@ -157,3 +157,5 @@ project.display = function() {
 		}
 	}
 }
+
+project.display();
