@@ -117,8 +117,16 @@ var projects = {
 	"projects" : [
 		{
 			"title" : "Project A",
-			"dates worked" : "Jan 2010 - June 2012",
+			"dates" : "Jan 2010 - June 2012",
 			"description" : "description of whatever Project A would be",
+			"images" : [
+				"url to image 1" , "url to image 2"
+			]
+		},
+		{
+			"title" : "Project B",
+			"dates" : "Aug 2012 - Oct 2013",
+			"description" : "description of whatever Project B would be",
 			"images" : [
 				"url to image 1" , "url to image 2"
 			]
@@ -126,17 +134,8 @@ var projects = {
 	]
 };
 
-function inName(name) {
-	name = name.trim().split(" ");
-	console.log(name);
-	name[1] = name[1].toUpperCase();
-	name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
-	return name[0] +" "+name[1];
-}
 
-$("#main").append(internationalizeButton)
-
-project.display = function() {
+projects.display = function() {
 	for (project in projects.projects) {
 		$("#projects").append(HTMLprojectStart);
 
@@ -158,4 +157,6 @@ project.display = function() {
 	}
 }
 
-project.display();
+projects.display();
+
+$("#mapDiv").append(googleMap);
