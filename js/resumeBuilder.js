@@ -15,7 +15,8 @@ var bio = {
 		"email": "emtshea@gmail.com",
 		"location": "Orlando, Florida",
 		"twitter" : "@MikeInVa",
-		"github" : "LottaJavaMike"
+		"github" : "LottaJavaMike",
+		"blog" : "contemplatingtech.com"
 	},
 	"welcome message" : "welcome to whatever this is",
 	"picture url" : "url to image later",
@@ -24,8 +25,24 @@ var bio = {
 
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 $("#header").prepend(formattedRole);
+
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 $("#header").prepend(formattedName);
+
+var formattedPhone = HTMLmobile.replace("%data%", bio.contacts.phone);
+$("#footerContacts").append(formattedPhone);
+
+var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+$("#footerContacts").append(formattedEmail);
+
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+$("#footerContacts").append(formattedTwitter);
+
+var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+$("#footerContacts").append(formattedGithub);
+
+var formattedBlog = HTMLblog.replace("%data%", bio.contacts.blog);
+$("#footerContacts").append(formattedBlog);
 
 if (bio.skills.length > 0) {
 	$("#header").append(HTMLskillsStart);
