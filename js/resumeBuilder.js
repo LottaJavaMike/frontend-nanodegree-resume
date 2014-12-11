@@ -19,7 +19,7 @@ var bio = {
 		"blog" : "contemplatingtech.com"
 	},
 	"welcome message" : "welcome to whatever this is",
-	"picture url" : "url to image later",
+	"picture" : "./images/resume.jpg",
 	"skills": ["networking", "server administration", "powershell", "programming"]
 };
 
@@ -43,6 +43,9 @@ $("#footerContacts").append(formattedGithub);
 
 var formattedBlog = HTMLblog.replace("%data%", bio.contacts.blog);
 $("#footerContacts").append(formattedBlog);
+
+var formattedbioPic = HTMLbioPic.replace("%data%", bio.picture);
+$(".biopic").append(formattedbioPic);
 
 if (bio.skills.length > 0) {
 	$("#header").append(HTMLskillsStart);
