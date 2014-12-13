@@ -79,7 +79,7 @@ var education = {
 			"location" : "Virginia Beach, VA",
 			"degree" : "Associate of Science",
 			"major" : "Computer and Information Sciences",
-			"graduated": "December 2009 ",
+			"dates": "December 2009 ",
 			"url" : "http://www.ecpi.edu/technology/"
 			
 		},
@@ -88,7 +88,7 @@ var education = {
 			"location" : "Melville, NY",
 			"degree" : "Associate of Occupational Studies",
 			"major" : "Computer Network Operations",
-			"graduated" : "December 2004",
+			"dates" : "December 2004",
 			"url" : "None"
 		},
 		{
@@ -96,7 +96,7 @@ var education = {
 			"location" : "Bay Shore, NY",
 			"degree" : "Computer Electronics Certificate",
 			"major" : "Computer and Network Operations",
-			"graduated" : "October 1995",
+			"dates" : "October 1995",
 			"url" : "None"
 		}
 	],
