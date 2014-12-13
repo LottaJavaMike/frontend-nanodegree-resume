@@ -1,12 +1,3 @@
-/*
-var name = "Michael Shea";
-var formattedName = HTMLheaderName.replace("%data%", name);
-var role = "Front-End Web Developer";
-var formattedRole = HTMLheaderRole.replace("%data%", role);
-
-$("#header").prepend(formattedName);
-$("#header").prepend(formattedRole);
-*/
 var bio = {
 	"name" : "Michael Shea",
 	"role" : "Front-End Developer",
@@ -18,9 +9,9 @@ var bio = {
 		"github" : "LottaJavaMike",
 		"blog" : "contemplatingtech.com"
 	},
-	"welcome message" : "welcome to whatever this is",
+	"message" : "welcome to whatever this is",
 	"picture" : "./images/resume.jpg",
-	"skills": ["networking", "server administration", "powershell", "programming"]
+	"skills": ["networking, desktop & server administration", "server & client side scripting", "web development", "android development"]
 };
 
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -28,6 +19,28 @@ $("#header").prepend(formattedRole);
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 $("#header").prepend(formattedName);
+
+var formattedbioPic = HTMLbioPic.replace("%data%", bio.picture);
+$("#header").append(formattedbioPic);
+
+// Contact info at top of page
+
+var formattedPhone = HTMLmobile.replace("%data%", bio.contacts.phone);
+$("#topContacts").append(formattedPhone);
+
+var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+$("#topContacts").append(formattedEmail);
+
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+$("#topContacts").append(formattedTwitter);
+
+var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+$("#topContacts").append(formattedGithub);
+
+var formattedBlog = HTMLblog.replace("%data%", bio.contacts.blog);
+$("#topContacts").append(formattedBlog);
+
+// Contact info at bottom of page
 
 var formattedPhone = HTMLmobile.replace("%data%", bio.contacts.phone);
 $("#footerContacts").append(formattedPhone);
@@ -44,9 +57,7 @@ $("#footerContacts").append(formattedGithub);
 var formattedBlog = HTMLblog.replace("%data%", bio.contacts.blog);
 $("#footerContacts").append(formattedBlog);
 
-var formattedbioPic = HTMLbioPic.replace("%data%", bio.picture);
-$(".biopic").append(formattedbioPic);
-
+// skillset
 if (bio.skills.length > 0) {
 	$("#header").append(HTMLskillsStart);
 
@@ -58,7 +69,8 @@ if (bio.skills.length > 0) {
 	$("#skills").append(formattedSkill);
 	formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
 	$("#skills").append(formattedSkill);
-}
+};
+
 
 var education = {
 	"schools" : [
@@ -73,10 +85,18 @@ var education = {
 		},
 		{
 			"name" : "Gibbs Long Island",
-			"location" : "Melville, New York",
+			"location" : "Melville, NY",
 			"degree" : "Associate of Occupational Studies",
 			"major" : "Computer Network Operations",
 			"graduated" : "December 2004",
+			"url" : "None"
+		},
+		{
+			"name" : "Suburban Technical Schools",
+			"location" : "Bay Shore, NY",
+			"degree" : "Computer Electronics Certificate",
+			"major" : "Computer and Network Operations",
+			"graduated" : "October 1995",
 			"url" : "None"
 		}
 	],
@@ -143,7 +163,7 @@ var work = {
 			"title" : "Computer Support Specialist II",
 			"location" : "Orlando, FL",
 			"dates" : "May 2012 to Present",
-			"description" : "Provide desktop support for 3000+ PC environment consisting of Windows XP, Windows 7 and Apple workstations."
+			"description" : "supporting end users in an environment consisting of Windows XP and Windows 7 PCs. Support includes Dell and HP desktops, notebooks and printers. Software titles include (but not limited to) Office 2007/2010 Enterprise, Internet Explorer 8/9, Mozilla Firefox, Winzip, Adobe Photoshop/Illustrator, Custom in-house applications, Remedy Help Desk, Outlook 2007/2010, Altiris, etc."
 		},
 		{
 			"employer" : "4 Corner Resources",
@@ -151,6 +171,34 @@ var work = {
 			"location" : "Orlando, FL",
 			"dates" : "April 2011 to May 2012",
 			"description" : "Technical Services Contractor at Bright House Networks"
+		},
+		{
+			"employer" : "The NPD Group, Inc.",
+			"title" : "Technical Support Specialist",
+			"location" : "Port Washington, NY",
+			"dates" : "October 1999 to 2010",
+			"description" : "Senior level technical support specialist. Support 1800+ end users in a hybrid envroment (Win2000/Win2003 servers) consisting of Win XP/7 workstations and Win 2000/2003 Server. Currently support desktop and notebook hardware/software, limited server hardware, and networking environment. Software titles include (but not limited to) Office 2003/2007 Pro, Internet Explorer, Mozilla Firefox, Winzip, Adobe Photoshop/Illustrator, Custom in-house applications, Remedy Help Desk, Outlook 2003/2007,Imagecast, Altiris, etc."
+		},
+		{
+			"employer" : "Alternative Resources Corp",
+			"title" : "Contractor - Technical Support",
+			"location" : "New York, NY",
+			"dates" : "April 1999 to October 1999",
+			"description" : "On-site technical support for The NPD Group, Inc. providing support in an environment consisting of Dell PCs running Microsoft Windows along with various hardware. Software support included (but not limited to) Office 2007/2010 Enterprise, Internet Explorer, Mozilla Firefox, Winzip, Adobe Photoshop/Illustrator, and other custom in-house applications."
+		},
+		{
+			"employer" : "TEKsystems",
+			"title" : "Consultant - Technical Services",
+			"location" : "New York, NY",
+			"dates" : "June 1997 to April 1999",
+			"description" : "Systems consultant. Various projects including helpdesk support in windows environments, OS conversions from Win 3.x to Win NT, and token ring to ethernet conversions. Clients included: Best Foods Baking Company, The NPD Group, Inc., MTV Networks(Viacom), Compucom, Corstar and Unisys"
+		},
+		{
+			"employer" : "Universal Computer Services",
+			"title" : "Field Service Technician",
+			"location" : "New York, NY",
+			"dates" : "November 1994 to June 1997",
+			"description" : "New York City based field service technician responsible for maintenance of clients systems (proprietary and PC based) and peripherals."
 		}
 	]
 };
@@ -176,19 +224,19 @@ displayWork();
 var projects = {
 	"projects" : [
 		{
-			"title" : "Project A",
-			"dates" : "Jan 2010 - June 2012",
-			"description" : "description of whatever Project A would be",
+			"title" : "Online Portfolio",
+			"dates" : "2014",
+			"description" : "Portfolio showcasing links to web development projects",
 			"images" : [
-				"url to image 1" , "url to image 2"
+				
 			]
 		},
 		{
-			"title" : "Project B",
-			"dates" : "Aug 2012 - Oct 2013",
-			"description" : "description of whatever Project B would be",
+			"title" : "Interactive Resume",
+			"dates" : "2014",
+			"description" : "The very interactive online resume you are looking at right now!",
 			"images" : [
-				"url to image 1" , "url to image 2"
+				
 			]
 		}
 	]
