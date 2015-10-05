@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var bio = {
 	"name" : "Michael Shea",
 	"role" : "Front-End Developer",
@@ -268,3 +269,9 @@ projects.display = function() {
 projects.display();
 
 $("#mapDiv").append(googleMap);
+||||||| merged common ancestors
+=======
+/*
+This is empty on purpose! Your code to build the resume will go here.
+ */
+>>>>>>> udacity/master
