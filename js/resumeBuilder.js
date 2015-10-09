@@ -10,7 +10,7 @@ var bio = {
 		"blog" : "contemplatingtech.com"
 	},
 	"message" : "welcome to whatever this is",
-	"picture" : "./images/resume.jpg",
+	"picture" : "./images/ProfilePhoto.jpg",
 	"skills": ["networking, desktop & server administration", "server & client side scripting", "web development", "android development"]
 };
 
