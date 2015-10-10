@@ -11,7 +11,7 @@ var bio = {
 	},
 	"message" : "welcome to whatever this is",
 	"picture" : "./images/ProfilePhoto.jpg",
-	"skills": ["networking, desktop & server administration", "server & client side scripting", "web development", "android development"]
+	"skills": ["networking", "desktop & server administration", "server & client side scripting", "HTML", "CSS", "Javascript"]
 };
 
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
