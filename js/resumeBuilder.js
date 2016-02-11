@@ -160,7 +160,7 @@ var work = {
 	"jobs" : [
 		{
 			"employer" : "Bright House Networks",
-			"title" : "Computer Support Specialist II",
+			"title" : "Senior Enterprise IT Service Operations Specialist",
 			"location" : "Orlando, FL",
 			"dates" : "May 2012 to Present",
 			"description" : "supporting end users in an environment consisting of Windows XP and Windows 7 PCs. Support includes Dell and HP desktops, notebooks and printers. Software titles include (but not limited to) Office 2007/2010 Enterprise, Internet Explorer 8/9, Mozilla Firefox, Winzip, Adobe Photoshop/Illustrator, Custom in-house applications, Remedy Help Desk, Outlook 2007/2010, Altiris, etc."
