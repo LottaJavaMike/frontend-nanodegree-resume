@@ -7,11 +7,11 @@ var bio = {
 		"location": "Orlando, Florida",
 		"twitter" : "@MikeInVa",
 		"github" : "LottaJavaMike",
-		"blog" : "contemplatingtech.com"
+		"blog" : "mikeshea.me"
 	},
 	"message" : "welcome to whatever this is",
 	"picture" : "./images/ProfilePhoto.jpg",
-	"skills": ["networking", "desktop & server administration", "server & client side scripting", "HTML", "CSS", "Javascript"]
+	"skills": ["senior level desktop support", "Junior level server administration", "Entry level HTML, CSS & Javascript"]
 };
 
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -25,8 +25,8 @@ $("#header").append(formattedbioPic);
 
 // Contact info at top of page
 
-var formattedPhone = HTMLmobile.replace("%data%", bio.contacts.phone);
-$("#topContacts").append(formattedPhone);
+/*var formattedPhone = HTMLmobile.replace("%data%", bio.contacts.phone);
+$("#topContacts").append(formattedPhone);*/
 
 var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
 $("#topContacts").append(formattedEmail);
@@ -42,8 +42,8 @@ $("#topContacts").append(formattedBlog);
 
 // Contact info at bottom of page
 
-var formattedPhone = HTMLmobile.replace("%data%", bio.contacts.phone);
-$("#footerContacts").append(formattedPhone);
+/*var formattedPhone = HTMLmobile.replace("%data%", bio.contacts.phone);
+$("#footerContacts").append(formattedPhone);*/
 
 var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
 $("#footerContacts").append(formattedEmail);
@@ -66,8 +66,6 @@ if (bio.skills.length > 0) {
 	formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
 	$("#skills").append(formattedSkill);
 	formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
-	$("#skills").append(formattedSkill);
-	formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
 	$("#skills").append(formattedSkill);
 };
 
@@ -163,7 +161,7 @@ var work = {
 			"title" : "Senior Enterprise IT Service Operations Specialist",
 			"location" : "Orlando, FL",
 			"dates" : "May 2012 to Present",
-			"description" : "supporting end users in an environment consisting of Windows XP and Windows 7 PCs. Support includes Dell and HP desktops, notebooks and printers. Software titles include (but not limited to) Office 2007/2010 Enterprise, Internet Explorer 8/9, Mozilla Firefox, Winzip, Adobe Photoshop/Illustrator, Custom in-house applications, Remedy Help Desk, Outlook 2007/2010, Altiris, etc."
+			"description" : "supporting end users in an environment consisting of Windows 7 PCs and Mac OSX. Support includes Dell and HP desktops, notebooks and printers. Software titles include (but not limited to) Office 2007/2010 Enterprise, Internet Explorer, Mozilla Firefox, Winzip, Adobe Photoshop/Illustrator, Custom in-house applications, Remedy Help Desk, Outlook 2007/2010, Altiris, etc."
 		},
 		{
 			"employer" : "4 Corner Resources",
