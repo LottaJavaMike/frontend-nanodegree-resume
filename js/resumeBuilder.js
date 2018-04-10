@@ -1,17 +1,17 @@
 var bio = {
 	"name" : "Michael Shea",
-	"role" : "Front-End Developer",
+	"role" : "Front-End Developer, IT Supervisor",
 	"contacts" : {
 		"phone": "321-555-1212",
 		"email": "emtshea@gmail.com",
-		"location": "Orlando, Florida",
-		"twitter" : "@MikeInVa",
+		"location": "Charlotte, North Carolina",
+		"twitter" : "@MikeLearnsCode",
 		"github" : "LottaJavaMike",
-		"blog" : "mikeshea.me"
+		"blog" : "MikeLearnsCode.blog"
 	},
 	"message" : "welcome to whatever this is",
 	"picture" : "./images/ProfilePhoto.jpg",
-	"skills": ["senior level desktop support", "Junior level server administration", "Entry level HTML, CSS & Javascript"]
+	"skills": ["Supervisor, IT Support Desk", "senior level desktop support", "Junior level server administration", "Entry level HTML, CSS & Javascript"]
 };
 
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -79,7 +79,7 @@ var education = {
 			"major" : "Computer and Information Sciences",
 			"dates": "December 2009 ",
 			"url" : "http://www.ecpi.edu/technology/"
-			
+
 		},
 		{
 			"name" : "Gibbs Long Island",
@@ -157,11 +157,11 @@ education.display();
 var work = {
 	"jobs" : [
 		{
-			"employer" : "Bright House Networks",
-			"title" : "Senior Enterprise IT Service Operations Specialist",
-			"location" : "Orlando, FL",
+			"employer" : "Charter Communications (formerly Bright House Networks)",
+			"title" : "Supervisor - IT Support Desk",
+			"location" : "Charlotte, NC",
 			"dates" : "May 2012 to Present",
-			"description" : "supporting end users in an environment consisting of Windows 7 PCs and Mac OSX. Support includes Dell and HP desktops, notebooks and printers. Software titles include (but not limited to) Office 2007/2010 Enterprise, Internet Explorer, Mozilla Firefox, Winzip, Adobe Photoshop/Illustrator, Custom in-house applications, Remedy Help Desk, Outlook 2007/2010, Altiris, etc."
+			"description" : "Supporting 100K+ end users in an environment consisting of Windows 7 PCs and Mac OSX. Support includes Dell and HP desktops, notebooks and printers. Software titles include (but not limited to) Office 2007/2010 Enterprise, Internet Explorer, Mozilla Firefox, Winzip, Adobe Photoshop/Illustrator, Custom in-house applications, Remedy Help Desk, Outlook 2007/2010, Altiris, etc."
 		},
 		{
 			"employer" : "4 Corner Resources",
@@ -226,7 +226,7 @@ var projects = {
 			"dates" : "2014",
 			"description" : "Portfolio showcasing links to web development projects",
 			"images" : [
-				
+
 			]
 		},
 		{
@@ -234,7 +234,7 @@ var projects = {
 			"dates" : "2014",
 			"description" : "The very interactive online resume you are looking at right now!",
 			"images" : [
-				
+
 			]
 		}
 	]
